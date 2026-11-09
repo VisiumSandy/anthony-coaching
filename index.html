@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ============================================================
+       TODO (PERSONNALISATION) — où modifier quoi :
+       1. Téléphone, handles réseaux, chiffres, nom de domaine : js/main.js (objet CONFIG)
+          + les liens tel: de ce fichier contiennent +33663959355 (rechercher/remplacer).
+       2. Textes, avis, offres, prix : ce fichier, blocs marqués "TODO".
+       3. Couleurs / polices : variables en haut de css/style.css.
+       ============================================================ -->
+
+  <!-- TODO: titre et description SEO (ville, spécialité) -->
+  <title>Anthony Coaching — Coach perte de poids et musculation</title>
+  <meta name="description" content="Coach sportif spécialisé perte de poids : programme d'entraînement, plan nutrition et suivi hebdomadaire sur WhatsApp. Appelle Anthony pour démarrer.">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- TODO: remplacer par l'URL réelle du site -->
+  <link rel="canonical" href="https://www.example.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Anthony Coaching — Perds le poids, garde le résultat">
+  <meta property="og:description" content="Coaching perte de poids : programme, nutrition, suivi hebdo. Appelle Anthony.">
+  <meta property="og:image" content="https://www.example.com/assets/background-2000.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E10600'/%3E%3Ctext x='16' y='24' font-size='22' font-family='Impact,sans-serif' text-anchor='middle' fill='%23fff'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sprite d'icônes SVG (une seule famille, trait 2px) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.2 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></g></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.3 2.4 1.7 3.9 4 4.1v3.2c-1.5.1-2.9-.4-4-1.2v6.2c0 3.2-2.4 5.7-5.6 5.7A5.6 5.6 0 0 1 5.4 15.4c0-3.5 3-6.1 6.4-5.6v3.3c-1.6-.5-3.1.6-3.1 2.2 0 1.3 1 2.3 2.3 2.3 1.4 0 2.4-1 2.4-2.5V3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="wrap header__in">
+      <a class="logo" href="#top" aria-label="Anthony Coaching, retour en haut">
+        <span class="logo__mark" aria-hidden="true">A</span>
+        <span class="logo__text">Anthony Coaching</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#bio">Mon parcours</a>
+        <a href="#resultats">Résultats</a>
+        <a href="#offres">Offres</a>
+        <a href="#salle">La salle</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Numéro d'Anthony : 06 63 95 93 55 (aussi dans js/main.js, objet CONFIG) -->
+      <a class="btn btn--primary btn--sm" href="tel:+33663959355" data-call aria-label="Réserve ton appel, appel gratuit de 30 minutes">
+        <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+        <span>Réserve ton appel</span>
+        <span class="btn__chip">Appel gratuit de 30 min</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="menu" id="menu" aria-label="Menu mobile" hidden>
+    <a href="#bio">Mon parcours</a>
+    <a href="#resultats">Résultats</a>
+    <a href="#offres">Offres</a>
+    <a href="#salle">La salle</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="hero__media" aria-hidden="false">
+        <img class="hero__img" id="heroImg"
+             src="assets/background-1000.jpg"
+             srcset="assets/background-1000.jpg 1000w, assets/background-2000.jpg 2000w"
+             sizes="100vw" width="2000" height="1333"
+             alt="Anthony tend un medecine ball à une cliente pendant une séance de renforcement"
+             fetchpriority="high">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="wrap hero__in">
+        <!-- TODO: promesse principale -->
+        <h1 class="hero__title">
+          <span class="ln"><span>Perds le poids.</span></span>
+          <span class="ln y"><span>Garde le résultat.</span></span>
+        </h1>
+        <!-- TODO: sous-titre -->
+        <p class="hero__sub">Coaching perte de poids avec un vrai suivi : programme adapté, plan nutrition simple, point chaque semaine. Un appel suffit pour démarrer.</p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="tel:+33663959355" data-call id="heroCall">
+            <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+            <span>Réserve ton appel</span>
+            <span class="btn__chip">Appel gratuit de 30 min</span>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#resultats">Voir les résultats</a>
+        </div>
+
+        <div class="proof">
+          <div class="proof__score">
+            <div class="stars" role="img" aria-label="Note de 5 sur 5">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <p><strong>5/5</strong> <span class="sep" aria-hidden="true"></span> <!-- TODO: nombre de clients --><span data-clients>+120</span> clients satisfaits</p>
+          </div>
+          <!-- TODO: 2 mini avis du hero -->
+          <figure class="mini">
+            <blockquote>« -11 kg en 4 mois, sans me priver. »</blockquote>
+            <figcaption>Sarah, 34 ans</figcaption>
+          </figure>
+          <figure class="mini">
+            <blockquote>« Enfin un coach qui répond vraiment. »</blockquote>
+            <figcaption>Karim, 41 ans</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Perte de poids</span><span>Prise de muscle</span><span>Tonification</span><span>Reprise du sport</span><span>Suivi WhatsApp</span><span>Plan nutrition</span><span>Perte de poids</span><span>Prise de muscle</span><span>Tonification</span><span>Reprise du sport</span><span>Suivi WhatsApp</span><span>Plan nutrition</span></div></div>
+
+    <!-- ===================== BIO ===================== -->
+    <section class="section bio alt" id="bio">
+      <div class="wrap bio__grid">
+        <div class="bio__photo" data-reveal>
+          <div class="frame">
+            <img src="assets/portrait-800.jpg" srcset="assets/portrait-480.jpg 480w, assets/portrait-800.jpg 800w"
+                 sizes="(min-width: 900px) 460px, 86vw" width="800" height="800" loading="lazy"
+                 alt="Portrait d'Anthony, coach sportif, bras croisés dans sa salle d'entraînement">
+          </div>
+        </div>
+
+        <div class="bio__text">
+          <h2 data-reveal>Je ne vends pas de miracle. Je t'apprends à tenir.</h2>
+          <!-- TODO: remplacer tout ce texte par la vraie histoire d'Anthony -->
+          <p class="lead" data-reveal>Coach depuis plus de huit ans, j'ai accompagné des gens qui avaient tout essayé : régimes, abonnements oubliés, programmes trouvés sur internet. Mon travail : un plan qui rentre dans ta vie, pas l'inverse.</p>
+
+          <dl class="pillars">
+            <div data-reveal>
+              <dt>Parcours</dt>
+              <dd>Diplômé BPJEPS, passé par la salle puis le coaching à domicile. Spécialisé perte de poids depuis 2018.</dd>
+            </div>
+            <div data-reveal>
+              <dt>Méthode</dt>
+              <dd>Bilan de départ, 3 séances par semaine, alimentation ajustée à ce que tu manges déjà. On mesure, on corrige, on avance.</dd>
+            </div>
+            <div data-reveal>
+              <dt>Valeurs</dt>
+              <dd>Franchise, régularité, zéro jugement. Si ça ne marche pas, je le dis et on change.</dd>
+            </div>
+          </dl>
+
+          <!-- TODO: 3 chiffres clés (data-count = valeur finale) -->
+          <ul class="stats" data-reveal>
+            <li><span class="stats__n"><span data-count="120" data-prefix="+">0</span></span><span class="stats__l">clients accompagnés</span></li>
+            <li><span class="stats__n"><span data-count="9" data-prefix="-" data-suffix=" kg">0</span></span><span class="stats__l">perdus en moyenne</span></li>
+            <li><span class="stats__n"><span data-count="8">0</span></span><span class="stats__l">ans d'expérience</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AVANT / APRÈS ===================== -->
+    <section class="section ba-sec" id="resultats">
+      <div class="wrap">
+        <h2 class="section__title" data-reveal>Avant, après. Sans filtre.</h2>
+        <p class="section__sub" data-reveal>Glisse la barre pour comparer. Photos publiées avec l'accord des clients.</p>
+
+        <!-- TODO: déposer les photos dans assets/ : avant-1.jpg / apres-1.jpg, avant-2.jpg / apres-2.jpg, avant-3.jpg / apres-3.jpg
+             (format portrait 4:5, même pose et même lumière). Tant qu'elles manquent, un cadre "Photo avant / après" s'affiche.
+             Adapter aussi prénoms et résultats. -->
+        <div class="bagrid">
+          <figure class="ba" data-reveal>
+            <div class="ba__stage" style="--pos:50%">
+              <div class="ba__layer ba__after"><img src="assets/apres-1.jpg" width="800" height="1000" loading="lazy" alt="Camille après le coaching"><span class="ba__ph">Photo après</span></div>
+              <div class="ba__layer ba__before"><img src="assets/avant-1.jpg" width="800" height="1000" loading="lazy" alt="Camille avant le coaching"><span class="ba__ph">Photo avant</span></div>
+              <span class="ba__tag ba__tag--l">Avant</span><span class="ba__tag ba__tag--r">Après</span>
+              <span class="ba__handle" aria-hidden="true"></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Camille">
+            </div>
+            <figcaption><strong>-14 kg en 5 mois</strong><span>Camille</span></figcaption>
+          </figure>
+          <figure class="ba" data-reveal>
+            <div class="ba__stage" style="--pos:50%">
+              <div class="ba__layer ba__after"><img src="assets/apres-2.jpg" width="800" height="1000" loading="lazy" alt="Karim après le coaching"><span class="ba__ph">Photo après</span></div>
+              <div class="ba__layer ba__before"><img src="assets/avant-2.jpg" width="800" height="1000" loading="lazy" alt="Karim avant le coaching"><span class="ba__ph">Photo avant</span></div>
+              <span class="ba__tag ba__tag--l">Avant</span><span class="ba__tag ba__tag--r">Après</span>
+              <span class="ba__handle" aria-hidden="true"></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Karim">
+            </div>
+            <figcaption><strong>-9 kg en 3 mois</strong><span>Karim</span></figcaption>
+          </figure>
+          <figure class="ba" data-reveal>
+            <div class="ba__stage" style="--pos:50%">
+              <div class="ba__layer ba__after"><img src="assets/apres-3.jpg" width="800" height="1000" loading="lazy" alt="Thierry après le coaching"><span class="ba__ph">Photo après</span></div>
+              <div class="ba__layer ba__before"><img src="assets/avant-3.jpg" width="800" height="1000" loading="lazy" alt="Thierry avant le coaching"><span class="ba__ph">Photo avant</span></div>
+              <span class="ba__tag ba__tag--l">Avant</span><span class="ba__tag ba__tag--r">Après</span>
+              <span class="ba__handle" aria-hidden="true"></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Thierry">
+            </div>
+            <figcaption><strong>-18 kg en 8 mois</strong><span>Thierry</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AVIS ===================== -->
+    <section class="section reviews alt" id="avis">
+      <div class="wrap">
+        <h2 class="section__title" data-reveal>Ils l'ont fait. Les chiffres parlent.</h2>
+
+        <!-- TODO: 4 à 6 avis réels (prénom, résultat chiffré, texte) -->
+        <div class="rgrid">
+          <article class="review review--big" data-reveal>
+            <p class="review__res">-14 kg</p>
+            <p class="review__time">en 5 mois</p>
+            <div class="stars" role="img" aria-label="5 étoiles sur 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+            <blockquote>Après ma grossesse je n'arrivais plus à me remettre dedans. Anthony a calé les séances sur mes horaires de crèche et m'a appris à manger sans compter chaque calorie. Je me sens plus forte qu'avant.</blockquote>
+            <p class="review__who">Camille, 32 ans</p>
+          </article>
+
+          <article class="review" data-reveal>
+            <p class="review__res">-9 kg</p><p class="review__time">en 3 mois</p>
+            <div class="stars" role="img" aria-label="5 étoiles sur 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+            <blockquote>Le suivi WhatsApp change tout. Une question, une réponse dans l'heure.</blockquote>
+            <p class="review__who">Karim, 41 ans</p>
+          </article>
+
+          <article class="review" data-reveal>
+            <p class="review__res">-6 cm</p><p class="review__time">de tour de taille</p>
+            <div class="stars" role="img" aria-label="5 étoiles sur 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+            <blockquote>Je ne montais pas sur la balance. Les mesures m'ont convaincue.</blockquote>
+            <p class="review__who">Léa, 28 ans</p>
+          </article>
+
+          <article class="review" data-reveal>
+            <p class="review__res">-18 kg</p><p class="review__time">en 8 mois</p>
+            <div class="stars" role="img" aria-label="5 étoiles sur 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+            <blockquote>À 50 ans, je pensais que c'était trop tard. Mon médecin a validé mes bilans.</blockquote>
+            <p class="review__who">Thierry, 50 ans</p>
+          </article>
+
+          <article class="review" data-reveal>
+            <p class="review__res">-7 kg</p><p class="review__time">en 10 semaines</p>
+            <div class="stars" role="img" aria-label="5 étoiles sur 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+            <blockquote>Mariage dans deux mois, objectif tenu. Et je continue.</blockquote>
+            <p class="review__who">Inès, 30 ans</p>
+          </article>
+        </div>
+
+        <div class="center" data-reveal>
+          <a class="btn btn--primary btn--lg" href="tel:+33663959355" data-call>
+            <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+            <span>Parle-moi de ton objectif</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OFFRES ===================== -->
+    <section class="section offers" id="offres">
+      <div class="wrap">
+        <h2 class="section__title" data-reveal>Ce que je te propose</h2>
+        <p class="section__sub" data-reveal>Un objectif, un plan. Tu m'appelles, on choisit ensemble par où commencer.</p>
+
+        <!-- TODO: objectifs proposés (textes à adapter). Pas de prix : tout se discute au téléphone. -->
+        <div class="ogrid">
+          <article class="offer offer--main" data-reveal>
+            <h3>Perte de poids</h3>
+            <p>Mon cœur de métier. On vise une perte de gras durable, sans régime extrême, en gardant ton muscle.</p>
+            <ul>
+              <li>Déficit calorique réaliste, calculé pour toi</li>
+              <li>Séances qui brûlent sans t'épuiser</li>
+              <li>Habitudes simples pour ne pas reprendre</li>
+            </ul>
+            <a class="btn btn--dark" href="tel:+33663959355" data-call>Je me lance</a>
+          </article>
+
+          <article class="offer" data-reveal>
+            <h3>Prise de muscle</h3>
+            <p>Un programme de force progressif, avec les charges et la technique qui vont avec.</p>
+            <a class="btn btn--primary" href="tel:+33663959355" data-call>Je me lance</a>
+          </article>
+
+          <article class="offer" data-reveal>
+            <h3>Tonification</h3>
+            <p>Raffermir, dessiner la silhouette, gagner en énergie au quotidien.</p>
+            <a class="btn btn--primary" href="tel:+33663959355" data-call>Je me lance</a>
+          </article>
+
+          <article class="offer" data-reveal>
+            <h3>Reprise du sport</h3>
+            <p>Après une pause, une grossesse ou une blessure : on repart doucement, mais on repart bien.</p>
+            <a class="btn btn--primary" href="tel:+33663959355" data-call>Je me lance</a>
+          </article>
+        </div>
+
+        <!-- TODO: ce qui est inclus dans chaque coaching -->
+        <h3 class="inc__title" data-reveal>Inclus dans chaque coaching</h3>
+        <dl class="inc">
+          <div data-reveal><dt>Bilan de départ</dt><dd>Mesures, photos, objectifs chiffrés. Tu sais d'où tu pars.</dd></div>
+          <div data-reveal><dt>Programme d'entraînement</dt><dd>Adapté à ton niveau, ton matériel et ton emploi du temps.</dd></div>
+          <div data-reveal><dt>Plan nutrition</dt><dd>Basé sur ce que tu manges déjà, sans aliments interdits.</dd></div>
+          <div data-reveal><dt>Suivi WhatsApp</dt><dd>Une question, une réponse. Point complet chaque semaine.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== SALLE ===================== -->
+    <section class="section gym alt" id="salle">
+      <div class="wrap gym__grid">
+        <div class="gym__photo" data-reveal>
+          <img src="assets/salle.webp" width="1200" height="675" loading="lazy"
+               alt="Salle Liberty GYM Habsheim : machines de musculation, vélos et tapis de course face à de grandes baies vitrées">
+        </div>
+        <div class="gym__info">
+          <h2 data-reveal>Là où on s'entraîne</h2>
+          <p class="lead" data-reveal>Une salle lumineuse et bien équipée : machines guidées, poids libres, cardio. Tout ce qu'il faut pour suivre ton programme, sans attendre ton tour.</p>
+          <!-- TODO: vérifier adresse, téléphone, horaires et note Google avant mise en ligne -->
+          <address class="gym__card" data-reveal>
+            <p class="gym__name">Liberty GYM Habsheim</p>
+            <ul>
+              <li><span>Adresse</span>5 Av. de Valparc, 68440 Habsheim</li>
+              <li><span>Salle</span><a href="tel:+33369541741">03 69 54 17 41</a></li>
+              <li><span>Horaires</span>Ouvert jusqu'à 23 h</li>
+              <li><span>Avis Google</span>4,3 sur 5 (143 avis)</li>
+            </ul>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Liberty+GYM+5+Av.+de+Valparc+68440+Habsheim" target="_blank" rel="noopener noreferrer">Voir l'itinéraire</a>
+          </address>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="final" id="contact">
+      <div class="wrap final__in">
+        <h2 data-reveal>Prêt à changer ?<br>Appelle-moi.</h2>
+        <p data-reveal>Premier échange gratuit, sans engagement. Je réponds du lundi au samedi, <!-- TODO: horaires -->de 9 h à 19 h.</p>
+        <a class="btn btn--dark btn--xl" href="tel:+33663959355" data-call data-reveal>
+          <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span data-phone-label>06 63 95 93 55</span>
+        </a>
+        <a class="final__mail" href="mailto:benzfit.coaching@gmail.com" data-reveal>ou écris-moi : benzfit.coaching@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <div>
+        <p class="footer__brand">Anthony Coaching</p>
+        <p class="footer__muted">Coaching perte de poids et musculation.</p>
+      </div>
+      <ul class="social">
+        <li><a href="mailto:benzfit.coaching@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><span>benzfit.coaching@gmail.com</span></a></li>
+        <li><a href="https://www.tiktok.com/@Anthony.Coaching" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-tiktok"/></svg><span>TikTok @Anthony.Coaching</span></a></li>
+        <li><a href="https://www.instagram.com/Anthony.Coaching" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg><span>Instagram @Anthony.Coaching</span></a></li>
+      </ul>
+    </div>
+    <div class="wrap footer__legal">
+      <!-- TODO: mentions légales réelles (statut, SIRET, adresse, hébergeur) -->
+      <p>© <span id="year">2026</span> Anthony Coaching. Mentions légales : Anthony [NOM], entrepreneur individuel, SIRET [XXX XXX XXX XXXXX]. Site hébergé par [HÉBERGEUR]. Les résultats varient selon chaque personne.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton d'appel flottant (mobile) -->
+  <a class="fab" id="fab" href="tel:+33663959355" data-call aria-label="Appeler Anthony">
+    <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+    <span>Appeler</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
