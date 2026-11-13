@@ -23,16 +23,19 @@
   <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="Anthony Coaching — Perds le poids, garde le résultat">
   <meta property="og:description" content="Coaching perte de poids : programme, nutrition, suivi hebdo. Appelle Anthony.">
-  <meta property="og:image" content="https://www.example.com/assets/background-2000.jpg">
+  <meta property="og:image" content="https://www.example.com/assets/logo.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E10600'/%3E%3Ctext x='16' y='24' font-size='22' font-family='Impact,sans-serif' text-anchor='middle' fill='%23fff'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="liquid" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="2" seed="7" result="n"/><feGaussianBlur in="n" stdDeviation="2" result="nb"/><feDisplacementMap in="SourceGraphic" in2="nb" scale="38" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
 
   <!-- Sprite d'icônes SVG (une seule famille, trait 2px) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -49,9 +52,8 @@
   <header class="header" id="header">
     <div class="progress" id="progress" aria-hidden="true"></div>
     <div class="wrap header__in">
-      <a class="logo" href="#top" aria-label="Anthony Coaching, retour en haut">
-        <span class="logo__mark" aria-hidden="true">A</span>
-        <span class="logo__text">Anthony Coaching</span>
+      <a class="logo" href="#top" aria-label="Benz Coaching, retour en haut">
+        <img src="assets/logo-crop.png" width="430" height="300" alt="Benz Coaching">
       </a>
       <nav class="nav" aria-label="Navigation principale">
         <a href="#bio">Mon parcours</a>
@@ -137,9 +139,9 @@
       <div class="wrap bio__grid">
         <div class="bio__photo" data-reveal>
           <div class="frame">
-            <img src="assets/portrait-800.jpg" srcset="assets/portrait-480.jpg 480w, assets/portrait-800.jpg 800w"
-                 sizes="(min-width: 900px) 460px, 86vw" width="800" height="800" loading="lazy"
-                 alt="Portrait d'Anthony, coach sportif, bras croisés dans sa salle d'entraînement">
+            <img src="assets/portrait-800.jpg" srcset="assets/portrait-800.jpg 800w"
+                 sizes="(min-width: 760px) 800px, 100vw" width="800" height="1029" loading="lazy" decoding="async"
+                 alt="Portrait d'Anthony, coach sportif, bras croisés">
           </div>
         </div>
 
@@ -349,7 +351,7 @@
       <div class="wrap final__in">
         <h2 data-reveal>Prêt à changer ?<br>Appelle-moi.</h2>
         <p data-reveal>Premier échange gratuit, sans engagement. Je réponds du lundi au samedi, <!-- TODO: horaires -->de 9 h à 19 h.</p>
-        <a class="btn btn--dark btn--xl" href="tel:+33663959355" data-call data-reveal>
+        <a class="btn btn--primary btn--xl" href="tel:+33663959355" data-call data-reveal>
           <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
           <span data-phone-label>06 63 95 93 55</span>
         </a>
@@ -362,7 +364,7 @@
   <footer class="footer">
     <div class="wrap footer__in">
       <div>
-        <p class="footer__brand">Anthony Coaching</p>
+        <img class="footer__logo" src="assets/logo-crop.png" width="430" height="300" loading="lazy" alt="Benz Coaching">
         <p class="footer__muted">Coaching perte de poids et musculation.</p>
       </div>
       <ul class="social">

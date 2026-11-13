@@ -61,8 +61,7 @@ const CONFIG = {
   const fmt = new Intl.NumberFormat("fr-FR");
   const runCount = (el) => {
     const end = +el.dataset.count, pre = el.dataset.prefix || "", suf = el.dataset.suffix || "";
-    if (reduce) { el.textContent = pre + fmt.format(end) + suf; return; }
-    const dur = 1600, t0 = performance.now();
+    const dur = reduce ? 900 : 1600, t0 = performance.now();
     const tick = (t) => {
       const k = Math.min((t - t0) / dur, 1), eased = 1 - Math.pow(1 - k, 3);
       el.textContent = pre + fmt.format(Math.round(end * eased)) + suf;
