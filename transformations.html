@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ============================================================
+       TODO (PERSONNALISATION) — où modifier quoi :
+       1. Téléphone, handles réseaux, chiffres, nom de domaine : js/main.js (objet CONFIG)
+          + les liens tel: de ce fichier contiennent +33663959355 (rechercher/remplacer).
+       2. Textes, avis, offres, prix : ce fichier, blocs marqués "TODO".
+       3. Couleurs / polices : variables en haut de css/style.css.
+       ============================================================ -->
+
+  <!-- TODO: titre et description SEO (ville, spécialité) -->
+  <title>Transformations — Anthony Coaching</title>
+  <meta name="description" content="Avant / après des clients d'Anthony Coaching : résultats réels, durée et parcours de chacun.">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- TODO: remplacer par l'URL réelle du site -->
+  <link rel="canonical" href="https://www.example.com/transformations.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Anthony Coaching — Perds le poids, garde le résultat">
+  <meta property="og:description" content="Coaching perte de poids : programme, nutrition, suivi hebdo. Appelle Anthony.">
+  <meta property="og:image" content="https://www.example.com/assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="liquid" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="2" seed="7" result="n"/><feGaussianBlur in="n" stdDeviation="2" result="nb"/><feDisplacementMap in="SourceGraphic" in2="nb" scale="38" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+
+  <!-- Sprite d'icônes SVG (une seule famille, trait 2px) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.2 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></g></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.3 2.4 1.7 3.9 4 4.1v3.2c-1.5.1-2.9-.4-4-1.2v6.2c0 3.2-2.4 5.7-5.6 5.7A5.6 5.6 0 0 1 5.4 15.4c0-3.5 3-6.1 6.4-5.6v3.3c-1.6-.5-3.1.6-3.1 2.2 0 1.3 1 2.3 2.3 2.3 1.4 0 2.4-1 2.4-2.5V3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="skip" href="index.html#main">Aller au contenu</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="wrap header__in">
+      <a class="logo" href="index.html#top" aria-label="Benz Coaching, retour en haut">
+        <img src="assets/logo-crop.png" width="430" height="300" alt="Benz Coaching">
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html#bio">Mon parcours</a>
+        <a href="index.html#resultats">Résultats</a>
+        <a href="transformations.html" aria-current="page">Transformations</a>
+        <a href="index.html#offres">Offres</a>
+        <a href="index.html#salle">La salle</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <!-- Numéro d'Anthony : 06 63 95 93 55 (aussi dans js/main.js, objet CONFIG) -->
+      <a class="btn btn--primary btn--sm" href="tel:+33663959355" data-call aria-label="Réserve ton appel, appel gratuit de 30 minutes">
+        <svg class="ico" aria-hidden="true"><use href="index.html#i-phone"/></svg>
+        <span>Réserve ton appel</span>
+        <span class="btn__chip">Appel gratuit de 30 min</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="menu" id="menu" aria-label="Menu mobile" hidden>
+    <a href="index.html#bio">Mon parcours</a>
+    <a href="index.html#resultats">Résultats</a>
+    <a href="transformations.html" aria-current="page">Transformations</a>
+    <a href="index.html#offres">Offres</a>
+    <a href="index.html#salle">La salle</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+
+  <main id="main">
+    <!-- Page générée par build_transformations.py : ne pas modifier à la main -->
+    <section class="section ba-sec trpage">
+      <div class="wrap">
+        <a class="tr__back" href="index.html#resultats">&larr; Retour au site</a>
+        <h1 class="section__title" data-reveal>Les transformations</h1>
+        <p class="section__sub" data-reveal>Photos publiées avec l'accord des clients. Les résultats varient selon chaque personne.</p>
+        <div class="trgrid">
+          <article class="tr" data-reveal>
+            <div class="tr__head">
+              <p class="tr__res">-9 kg</p>
+              <p class="tr__meta"><strong>Paul</strong> · 3 mois</p>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Face</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/paul-face_apres_paul2.jpg" width="800" height="1000" loading="lazy" alt="Paul avant (face)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/paul-face_apres_paul1.jpg" width="800" height="1000" loading="lazy" alt="Paul après (face)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Dos</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/paul-dos_avant_paul1.jpg" width="800" height="1000" loading="lazy" alt="Paul avant (dos)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/paul-dos_avant_paul2.jpg" width="800" height="1000" loading="lazy" alt="Paul après (dos)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <p class="tr__desc">Perte de masse grasse, augmentation de la force et du cardio.</p>
+          </article>
+          <article class="tr" data-reveal>
+            <div class="tr__head">
+              <p class="tr__res">+6 kg propre</p>
+              <p class="tr__meta"><strong>Lola</strong> · quelques mois</p>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Profil</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/lola-avant.jpg" width="800" height="1000" loading="lazy" alt="Lola avant (profil)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/lola-apres.jpg" width="800" height="1000" loading="lazy" alt="Lola après (profil)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <p class="tr__desc">Un fessier beaucoup plus galbé et une prise de masse musculaire sur tout le corps.</p>
+          </article>
+          <article class="tr" data-reveal>
+            <div class="tr__head">
+              <p class="tr__res">+4 kg sec</p>
+              <p class="tr__meta"><strong>Téo</strong> · 3 mois</p>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Face</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/teo-avant2.jpg" width="800" height="1000" loading="lazy" alt="Téo avant (face)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/teo-apres3.jpg" width="800" height="1000" loading="lazy" alt="Téo après (face)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Profil</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/teo-avant1.jpg" width="800" height="1000" loading="lazy" alt="Téo avant (profil)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/teo-apres2.jpg" width="800" height="1000" loading="lazy" alt="Téo après (profil)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Dos</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/teo-avant3.jpg" width="800" height="1000" loading="lazy" alt="Téo avant (dos)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/teo-apres1.jpg" width="800" height="1000" loading="lazy" alt="Téo après (dos)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <p class="tr__desc">Une prise de masse sèche : du muscle, sans gras en trop.</p>
+          </article>
+          <article class="tr" data-reveal>
+            <div class="tr__head">
+              <p class="tr__res">-10 kg</p>
+              <p class="tr__meta"><strong>Léa</strong> · 3 mois</p>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Profil</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/lea-avant.jpg" width="800" height="1000" loading="lazy" alt="Léa avant (profil)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/lea-apres.jpg" width="800" height="1000" loading="lazy" alt="Léa après (profil)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <p class="tr__desc">Dix kilos en moins en trois mois, sans régime extrême.</p>
+          </article>
+          <article class="tr" data-reveal>
+            <div class="tr__head">
+              <p class="tr__res">Transformation</p>
+              <p class="tr__meta"><strong>Clara</strong> · environ 6 mois</p>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Face</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/clara-avant2.jpg" width="800" height="1000" loading="lazy" alt="Clara avant (face)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/clara-apres1.jpg" width="800" height="1000" loading="lazy" alt="Clara après (face)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Profil</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/clara-avant3.jpg" width="800" height="1000" loading="lazy" alt="Clara avant (profil)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/clara-apres2.jpg" width="800" height="1000" loading="lazy" alt="Clara après (profil)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Dos</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/clara-avant1.jpg" width="800" height="1000" loading="lazy" alt="Clara avant (dos)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/clara-apres3.jpg" width="800" height="1000" loading="lazy" alt="Clara après (dos)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <p class="tr__desc">Six mois de travail, sous tous les angles.</p>
+          </article>
+          <article class="tr" data-reveal>
+            <div class="tr__head">
+              <p class="tr__res">+5 kg propre</p>
+              <p class="tr__meta"><strong>Nilson</strong> · 3 mois</p>
+            </div>
+            <div class="tr__pair">
+              <p class="tr__view">Face</p>
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/nilson-avant.jpg" width="800" height="1000" loading="lazy" alt="Nilson avant (face)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/nilson-apres.jpg" width="800" height="1000" loading="lazy" alt="Nilson après (face)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <p class="tr__desc">Cinq kilos de muscle propre en trois mois.</p>
+          </article>
+          <article class="tr tr--feature" data-reveal>
+            <div class="tr__head">
+              <p class="tr__res">-7 kg</p>
+              <p class="tr__meta"><strong>Carl</strong></p>
+            </div>
+            <div class="tr__pair">
+              
+              <div class="tr__row">
+                <figure class="tr__ph"><img src="assets/transfo/carl-avant.jpg" width="800" height="1000" loading="lazy" alt="Carl avant (avant / après)"><span class="tr__tag">Avant</span></figure>
+                <figure class="tr__ph"><img src="assets/transfo/carl-apres.jpg" width="800" height="1000" loading="lazy" alt="Carl après (avant / après)"><span class="tr__tag tr__tag--r">Après</span></figure>
+              </div>
+            </div>
+            <p class="tr__desc">Une perte de poids, mais surtout un changement de mindset : Carl a acheté un tapis de course pour s&#x27;entraîner chez lui, alors que quelques semaines plus tôt il détestait le sport.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" id="contact">
+      <div class="wrap final__in">
+        <h2 data-reveal>Ta transformation<br>commence ici.</h2>
+        <p data-reveal>Premier échange gratuit, sans engagement.</p>
+        <a class="btn btn--primary btn--xl" href="tel:+33663959355" data-call data-reveal>
+          <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span data-phone-label>06 63 95 93 55</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <div>
+        <img class="footer__logo" src="assets/logo-crop.png" width="430" height="300" loading="lazy" alt="Benz Coaching">
+        <p class="footer__muted">Coaching perte de poids et musculation.</p>
+      </div>
+      <ul class="social">
+        <li><a href="mailto:benzfit.coaching@gmail.com"><svg class="ico" aria-hidden="true"><use href="index.html#i-mail"/></svg><span>benzfit.coaching@gmail.com</span></a></li>
+        <li><a href="https://www.tiktok.com/@Anthony.Coaching" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="index.html#i-tiktok"/></svg><span>TikTok @Anthony.Coaching</span></a></li>
+        <li><a href="https://www.instagram.com/Anthony.Coaching" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="index.html#i-instagram"/></svg><span>Instagram @Anthony.Coaching</span></a></li>
+      </ul>
+    </div>
+    <div class="wrap footer__legal">
+      <!-- TODO: mentions légales réelles (statut, SIRET, adresse, hébergeur) -->
+      <p>© <span id="year">2026</span> Anthony Coaching. Mentions légales : Anthony [NOM], entrepreneur individuel, SIRET [XXX XXX XXX XXXXX]. Site hébergé par [HÉBERGEUR]. Les résultats varient selon chaque personne.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton d'appel flottant (mobile) -->
+  <a class="fab" id="fab" href="tel:+33663959355" data-call aria-label="Appeler Anthony">
+    <svg class="ico" aria-hidden="true"><use href="index.html#i-phone"/></svg>
+    <span>Appeler</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

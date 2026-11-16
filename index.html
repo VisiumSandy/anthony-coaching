@@ -58,6 +58,7 @@
       <nav class="nav" aria-label="Navigation principale">
         <a href="#bio">Mon parcours</a>
         <a href="#resultats">Résultats</a>
+        <a href="transformations.html">Transformations</a>
         <a href="#offres">Offres</a>
         <a href="#salle">La salle</a>
         <a href="#contact">Contact</a>
@@ -74,6 +75,7 @@
   <nav class="menu" id="menu" aria-label="Menu mobile" hidden>
     <a href="#bio">Mon parcours</a>
     <a href="#resultats">Résultats</a>
+    <a href="transformations.html">Transformations</a>
     <a href="#offres">Offres</a>
     <a href="#salle">La salle</a>
     <a href="#contact">Contact</a>
@@ -181,40 +183,54 @@
         <h2 class="section__title" data-reveal>Avant, après. Sans filtre.</h2>
         <p class="section__sub" data-reveal>Glisse la barre pour comparer. Photos publiées avec l'accord des clients.</p>
 
-        <!-- TODO: déposer les photos dans assets/ : avant-1.jpg / apres-1.jpg, avant-2.jpg / apres-2.jpg, avant-3.jpg / apres-3.jpg
-             (format portrait 4:5, même pose et même lumière). Tant qu'elles manquent, un cadre "Photo avant / après" s'affiche.
-             Adapter aussi prénoms et résultats. -->
         <div class="bagrid">
           <figure class="ba" data-reveal>
             <div class="ba__stage" style="--pos:50%">
-              <div class="ba__layer ba__after"><img src="assets/apres-1.jpg" width="800" height="1000" loading="lazy" alt="Camille après le coaching"><span class="ba__ph">Photo après</span></div>
-              <div class="ba__layer ba__before"><img src="assets/avant-1.jpg" width="800" height="1000" loading="lazy" alt="Camille avant le coaching"><span class="ba__ph">Photo avant</span></div>
+              <div class="ba__layer ba__after"><img src="assets/transfo/lola-apres.jpg" width="800" height="1000" loading="lazy" alt="Lola après le coaching"><span class="ba__ph">Photo après</span></div>
+              <div class="ba__layer ba__before"><img src="assets/transfo/lola-avant.jpg" width="800" height="1000" loading="lazy" alt="Lola avant le coaching"><span class="ba__ph">Photo avant</span></div>
               <span class="ba__tag ba__tag--l">Avant</span><span class="ba__tag ba__tag--r">Après</span>
               <span class="ba__handle" aria-hidden="true"></span>
-              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Camille">
+              <span class="ba__hint" aria-hidden="true">&larr; Glisse pour comparer &rarr;</span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Lola">
             </div>
-            <figcaption><strong>-14 kg en 5 mois</strong><span>Camille</span></figcaption>
+            <figcaption><strong>+6 kg propre</strong><span>Lola · quelques mois</span></figcaption>
           </figure>
           <figure class="ba" data-reveal>
             <div class="ba__stage" style="--pos:50%">
-              <div class="ba__layer ba__after"><img src="assets/apres-2.jpg" width="800" height="1000" loading="lazy" alt="Karim après le coaching"><span class="ba__ph">Photo après</span></div>
-              <div class="ba__layer ba__before"><img src="assets/avant-2.jpg" width="800" height="1000" loading="lazy" alt="Karim avant le coaching"><span class="ba__ph">Photo avant</span></div>
+              <div class="ba__layer ba__after"><img src="assets/transfo/teo-apres3.jpg" width="800" height="1000" loading="lazy" alt="Téo après le coaching"><span class="ba__ph">Photo après</span></div>
+              <div class="ba__layer ba__before"><img src="assets/transfo/teo-avant2.jpg" width="800" height="1000" loading="lazy" alt="Téo avant le coaching"><span class="ba__ph">Photo avant</span></div>
               <span class="ba__tag ba__tag--l">Avant</span><span class="ba__tag ba__tag--r">Après</span>
               <span class="ba__handle" aria-hidden="true"></span>
-              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Karim">
+              <span class="ba__hint" aria-hidden="true">&larr; Glisse pour comparer &rarr;</span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Téo">
             </div>
-            <figcaption><strong>-9 kg en 3 mois</strong><span>Karim</span></figcaption>
+            <figcaption><strong>+4 kg sec</strong><span>Téo · 3 mois</span></figcaption>
           </figure>
           <figure class="ba" data-reveal>
             <div class="ba__stage" style="--pos:50%">
-              <div class="ba__layer ba__after"><img src="assets/apres-3.jpg" width="800" height="1000" loading="lazy" alt="Thierry après le coaching"><span class="ba__ph">Photo après</span></div>
-              <div class="ba__layer ba__before"><img src="assets/avant-3.jpg" width="800" height="1000" loading="lazy" alt="Thierry avant le coaching"><span class="ba__ph">Photo avant</span></div>
+              <div class="ba__layer ba__after"><img src="assets/transfo/nilson-apres.jpg" width="800" height="1000" loading="lazy" alt="Nilson après le coaching"><span class="ba__ph">Photo après</span></div>
+              <div class="ba__layer ba__before"><img src="assets/transfo/nilson-avant.jpg" width="800" height="1000" loading="lazy" alt="Nilson avant le coaching"><span class="ba__ph">Photo avant</span></div>
               <span class="ba__tag ba__tag--l">Avant</span><span class="ba__tag ba__tag--r">Après</span>
               <span class="ba__handle" aria-hidden="true"></span>
-              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Thierry">
+              <span class="ba__hint" aria-hidden="true">&larr; Glisse pour comparer &rarr;</span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Nilson">
             </div>
-            <figcaption><strong>-18 kg en 8 mois</strong><span>Thierry</span></figcaption>
+            <figcaption><strong>+5 kg propre</strong><span>Nilson · 3 mois</span></figcaption>
           </figure>
+          <figure class="ba" data-reveal>
+            <div class="ba__stage" style="--pos:50%">
+              <div class="ba__layer ba__after"><img src="assets/transfo/clara-apres1.jpg" width="800" height="1000" loading="lazy" alt="Clara après le coaching"><span class="ba__ph">Photo après</span></div>
+              <div class="ba__layer ba__before"><img src="assets/transfo/clara-avant2.jpg" width="800" height="1000" loading="lazy" alt="Clara avant le coaching"><span class="ba__ph">Photo avant</span></div>
+              <span class="ba__tag ba__tag--l">Avant</span><span class="ba__tag ba__tag--r">Après</span>
+              <span class="ba__handle" aria-hidden="true"></span>
+              <span class="ba__hint" aria-hidden="true">&larr; Glisse pour comparer &rarr;</span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après, Clara">
+            </div>
+            <figcaption><strong>Transformation</strong><span>Clara · environ 6 mois</span></figcaption>
+          </figure>
+        </div>
+        <div class="ba__more" data-reveal>
+          <a class="btn btn--ghost btn--lg" href="transformations.html">Voir toutes les transformations</a>
         </div>
       </div>
     </section>

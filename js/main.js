@@ -17,8 +17,7 @@ const CONFIG = {
   $$("[data-call]").forEach(a => a.setAttribute("href", "tel:" + CONFIG.phoneE164));
   $$("[data-phone-label]").forEach(e => (e.textContent = CONFIG.phoneDisplay));
   $$("[data-clients]").forEach(e => (e.textContent = CONFIG.clients));
-  $("#year").textContent = new Date().getFullYear();
-
+  const yr = $("#year"); if (yr) yr.textContent = new Date().getFullYear();
   // Header : bordure après scroll
   const header = $("#header");
   const progress = $("#progress");
@@ -33,7 +32,7 @@ const CONFIG = {
       header.classList.toggle("is-stuck", y > 20);
       const max = document.documentElement.scrollHeight - innerHeight;
       progress.style.setProperty("--p", max > 0 ? Math.min(y / max, 1) : 0);
-      if (!reduce && y < innerHeight * 1.2) img.style.transform = `translate3d(0, ${y * 0.18}px, 0) scale(1.12)`;
+      if (img && !reduce && y < innerHeight * 1.2) img.style.transform = `translate3d(0, ${y * 0.18}px, 0) scale(1.12)`;
       ticking = false;
     });
   };
@@ -77,7 +76,7 @@ const CONFIG = {
   // Avant / après : curseur + cadre de secours si la photo manque
   $$(".ba__stage").forEach(st => {
     const r = $(".ba__range", st);
-    r.addEventListener("input", () => st.style.setProperty("--pos", r.value + "%"));
+    r.addEventListener("input", () => { st.style.setProperty("--pos", r.value + "%"); st.classList.add("is-used"); });
     $$("img", st).forEach(im => {
       const miss = () => im.setAttribute("data-missing", "");
       if (im.complete && !im.naturalWidth) miss();
@@ -96,12 +95,15 @@ const CONFIG = {
   burger.addEventListener("click", () => setMenu(menu.hidden));
   menu.addEventListener("click", e => { if (e.target.closest("a")) setMenu(false); });
   addEventListener("keydown", e => { if (e.key === "Escape" && !menu.hidden) { setMenu(false); burger.focus(); } });
-  matchMedia("(min-width: 960px)").addEventListener("change", e => { if (e.matches) setMenu(false); });
+  matchMedia("(min-width: 1100px)").addEventListener("change", e => { if (e.matches) setMenu(false); });
 
   // Bouton flottant : visible une fois le CTA du hero passé, caché sur le CTA final
-  const fab = $("#fab");
-  let heroOut = false, finalIn = false;
-  const upd = () => fab.classList.toggle("is-on", heroOut && !finalIn);
-  new IntersectionObserver(([e]) => { heroOut = !e.isIntersecting; upd(); }).observe($("#heroCall"));
-  new IntersectionObserver(([e]) => { finalIn = e.isIntersecting; upd(); }, { threshold: 0.25 }).observe($("#contact"));
+  const fab = $("#fab"), heroCall = $("#heroCall"), contact = $("#contact");
+  if (fab && contact) {
+    let heroOut = !heroCall, finalIn = false;
+    const upd = () => fab.classList.toggle("is-on", heroOut && !finalIn);
+    if (heroCall) new IntersectionObserver(([e]) => { heroOut = !e.isIntersecting; upd(); }).observe(heroCall);
+    new IntersectionObserver(([e]) => { finalIn = e.isIntersecting; upd(); }, { threshold: 0.25 }).observe(contact);
+    upd();
+  }
 })();
