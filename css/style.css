@@ -543,3 +543,37 @@ body { overflow-x: clip; }
 .ba__stage.is-used .ba__hint { opacity: 0; animation: none; }
 @keyframes ba-hint { 0%, 100% { transform: translateX(-50%) scale(1); } 50% { transform: translateX(-50%) scale(1.06); } }
 @media (prefers-reduced-motion: reduce) { .ba__hint { animation: none; } }
+
+/* Page parcours : fresque chronologique */
+.pc { position: relative; margin-top: 3rem; padding-left: 2.2rem; }
+.pc::before { content: ""; position: absolute; left: .55rem; top: .6rem; bottom: .6rem; width: 2px; background: linear-gradient(var(--red), rgba(255,255,255,.08)); }
+.pc__step { position: relative; margin-bottom: 2.5rem; }
+.pc__step::before { content: ""; position: absolute; left: -2.05rem; top: .55rem; width: 14px; height: 14px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 5px rgba(230,30,30,.2); }
+.pc__year { display: block; font: 400 clamp(2.6rem, 8vw, 4.5rem)/1 var(--font-display); color: var(--red-hot); }
+.pc__card { margin-top: .5rem; padding: 1.2rem; border-radius: var(--r-lg); border: 1px solid var(--line); background: rgba(255,255,255,.03); }
+.pc__card h2 { font: 400 clamp(1.4rem, 4vw, 2rem)/1.15 var(--font-display); text-transform: uppercase; margin-bottom: .8rem; }
+.pc__card p { color: var(--muted); margin-top: .75rem; max-width: 65ch; }
+.pc__photo { margin: 1.2rem 0 0; max-width: 420px; border-radius: var(--r-md, 14px); overflow: hidden; }
+.pc__photo img { display: block; width: 100%; height: auto; }
+.pc__pair { margin-top: 2rem; max-width: 640px; }
+@media (min-width: 900px) { .pc { padding-left: 3rem; } .pc__step::before { left: -2.85rem; } .pc::before { left: .75rem; } .pc__card { padding: 1.6rem 1.8rem; } }
+.bio__more { margin-top: 1.5rem; }
+
+/* Chronologie cliquable (points rouges) */
+.tl { margin-top: 2rem; }
+.tl ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); position: relative; }
+.tl ol::before { content: ""; position: absolute; left: 10%; right: 10%; top: 11px; height: 2px; background: linear-gradient(90deg, var(--red), rgba(255,255,255,.15)); }
+.tl a { position: relative; display: flex; flex-direction: column; align-items: center; gap: .35rem; text-align: center; text-decoration: none; padding: 0 .15rem; }
+.tl__dot { width: 24px; height: 24px; border-radius: 50%; background: var(--red); border: 4px solid var(--black); box-shadow: 0 0 0 2px var(--red), 0 0 0 7px rgba(230,30,30,.18); transition: transform .2s var(--ease), box-shadow .2s; }
+.tl a:hover .tl__dot, .tl a:focus-visible .tl__dot { transform: scale(1.25); box-shadow: 0 0 0 2px var(--red-hot), 0 0 0 10px rgba(230,30,30,.3); }
+.tl__y { font: 400 1.5rem/1 var(--font-display); color: #fff; margin-top: .3rem; }
+.tl__t { font-size: .78rem; font-weight: 600; color: var(--muted); line-height: 1.25; }
+.tl a:hover .tl__y { color: var(--red-hot); }
+@media (min-width: 760px) { .tl__y { font-size: 2rem; } .tl__t { font-size: .95rem; } }
+.bio__tl { margin-top: 3rem; text-align: center; }
+.bio__tlhint { color: var(--muted); font-weight: 600; }
+.bio__tl .bio__more { margin-top: 2rem; }
+.pc__step { scroll-margin-top: 6rem; }
+.pc__step:target .pc__card { border-color: var(--red); }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

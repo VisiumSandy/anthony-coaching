@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ============================================================
+       TODO (PERSONNALISATION) — où modifier quoi :
+       1. Téléphone, handles réseaux, chiffres, nom de domaine : js/main.js (objet CONFIG)
+          + les liens tel: de ce fichier contiennent +33663959355 (rechercher/remplacer).
+       2. Textes, avis, offres, prix : ce fichier, blocs marqués "TODO".
+       3. Couleurs / polices : variables en haut de css/style.css.
+       ============================================================ -->
+
+  <!-- TODO: titre et description SEO (ville, spécialité) -->
+  <title>Mon parcours — Anthony Coaching</title>
+  <meta name="description" content="L'histoire d'Anthony, coach sportif : de 52 kg en 2019 à son propre studio de coaching en 2026.">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- TODO: remplacer par l'URL réelle du site -->
+  <link rel="canonical" href="https://www.example.com/parcours.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Anthony Coaching — Perds le poids, garde le résultat">
+  <meta property="og:description" content="Coaching perte de poids : programme, nutrition, suivi hebdo. Appelle Anthony.">
+  <meta property="og:image" content="https://www.example.com/assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="liquid" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="2" seed="7" result="n"/><feGaussianBlur in="n" stdDeviation="2" result="nb"/><feDisplacementMap in="SourceGraphic" in2="nb" scale="38" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+
+  <!-- Sprite d'icônes SVG (une seule famille, trait 2px) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.2 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></g></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.3 2.4 1.7 3.9 4 4.1v3.2c-1.5.1-2.9-.4-4-1.2v6.2c0 3.2-2.4 5.7-5.6 5.7A5.6 5.6 0 0 1 5.4 15.4c0-3.5 3-6.1 6.4-5.6v3.3c-1.6-.5-3.1.6-3.1 2.2 0 1.3 1 2.3 2.3 2.3 1.4 0 2.4-1 2.4-2.5V3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="skip" href="index.html#main">Aller au contenu</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="wrap header__in">
+      <a class="logo" href="index.html#top" aria-label="Benz Coaching, retour en haut">
+        <img src="assets/logo-crop.png" width="430" height="300" alt="Benz Coaching">
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html#bio">Mon parcours</a>
+        <a href="index.html#resultats">Résultats</a>
+        <a href="transformations.html">Transformations</a>
+        <a href="index.html#offres">Offres</a>
+        <a href="index.html#salle">La salle</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <!-- Numéro d'Anthony : 06 63 95 93 55 (aussi dans js/main.js, objet CONFIG) -->
+      <a class="btn btn--primary btn--sm" href="tel:+33663959355" data-call aria-label="Réserve ton appel, appel gratuit de 30 minutes">
+        <svg class="ico" aria-hidden="true"><use href="index.html#i-phone"/></svg>
+        <span>Réserve ton appel</span>
+        <span class="btn__chip">Appel gratuit de 30 min</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="menu" id="menu" aria-label="Menu mobile" hidden>
+    <a href="index.html#bio">Mon parcours</a>
+    <a href="index.html#resultats">Résultats</a>
+    <a href="transformations.html">Transformations</a>
+    <a href="index.html#offres">Offres</a>
+    <a href="index.html#salle">La salle</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+
+  <main id="main">
+    <!-- Page générée par build_pages.py : ne pas modifier à la main -->
+    <section class="section trpage pcpage">
+      <div class="wrap">
+        <a class="tr__back" href="index.html#bio">&larr; Retour au site</a>
+        <h1 class="section__title" data-reveal>Mon parcours</h1>
+        <p class="section__sub" data-reveal>Je m&#x27;appelle Anthony et je vais vous raconter mon histoire.</p>
+        <nav class="tl" aria-label="Chronologie du parcours" data-reveal><ol>
+          <li><a href="#y2019" aria-label="2019 : 1re séance, 52 kg"><span class="tl__dot" aria-hidden="true"></span><span class="tl__y">2019</span><span class="tl__t">1re séance, 52 kg</span></a></li>
+          <li><a href="#y2022" aria-label="2022 : Chasseurs alpins"><span class="tl__dot" aria-hidden="true"></span><span class="tl__y">2022</span><span class="tl__t">Chasseurs alpins</span></a></li>
+          <li><a href="#y2023" aria-label="2023 : BPJEPS"><span class="tl__dot" aria-hidden="true"></span><span class="tl__y">2023</span><span class="tl__t">BPJEPS</span></a></li>
+          <li><a href="#y2024" aria-label="2024 : Premiers clients"><span class="tl__dot" aria-hidden="true"></span><span class="tl__y">2024</span><span class="tl__t">Premiers clients</span></a></li>
+          <li><a href="#y2026" aria-label="2026 : Mon studio"><span class="tl__dot" aria-hidden="true"></span><span class="tl__y">2026</span><span class="tl__t">Mon studio</span></a></li>
+        </ol></nav>
+        
+        <div class="pc">
+          <article class="pc__step" id="y2019" data-reveal>
+            <span class="pc__year" aria-hidden="true">2019</span>
+            <div class="pc__card">
+              <h2>17 octobre 2019. Un tournant majeur dans ma vie.</h2>
+              <p>C&#x27;est le jour où j&#x27;ai poussé les portes d&#x27;une salle de sport pour la première fois, avec un objectif : prendre de la masse musculaire.</p>
+              <p>À l&#x27;époque, je faisais 1 m 70 pour 52 kg et je ne me sentais pas à l&#x27;aise dans mon corps. Il fallait que ça change.</p>
+              <p>Pas de coach, pas d&#x27;accompagnement. J&#x27;ai appris seul, en me documentant quotidiennement.</p>
+              <p>Pendant presque 2 ans, je me suis entraîné 6 fois par semaine, je mangeais énormément… mais les résultats restaient très limités.</p>
+              <p>Mon erreur ? Copier les entraînements et les méthodes des autres sans tenir compte de mon propre profil. À l&#x27;époque, je travaillais sur le chantier et ma dépense calorique était très importante. Mon alimentation et mon entraînement n&#x27;étaient tout simplement pas adaptés à mes besoins.</p>
+              <p>Le déclic est arrivé lorsque j&#x27;ai compris qu&#x27;il fallait arrêter de copier les autres et commencer à adapter mon entraînement et mon alimentation à MOI. En quelques mois, j&#x27;ai obtenu des résultats qui m&#x27;avaient demandé presque 2 ans auparavant.</p>
+              <p>C&#x27;est ce que je veux transmettre aujourd&#x27;hui en tant que coach : chaque personne est différente et la progression passe avant tout par un accompagnement personnalisé.</p>
+              
+            </div>
+          </article>
+          <article class="pc__step" id="y2022" data-reveal>
+            <span class="pc__year" aria-hidden="true">2022</span>
+            <div class="pc__card">
+              <h2>Une expérience qui a changé ma vision du sport.</h2>
+              <p>J&#x27;ai passé quelques mois où j&#x27;ai pu expérimenter le métier de militaire au 27e bataillon de chasseurs alpins, et c&#x27;est là que j&#x27;ai eu un véritable déclic.</p>
+              <p>Être musclé, c&#x27;est bien. Mais avoir un corps complet, performant et capable de s&#x27;adapter à toutes les situations, c&#x27;est encore mieux ! Marche en montagne, course à pied, escalade, natation, musculation au poids du corps… Des activités exigeantes qui poussent constamment à dépasser ses limites.</p>
+              <p>J&#x27;ai surtout compris une chose : ce n&#x27;est pas forcément le plus musclé qui va le plus loin, mais celui qui possède le meilleur mental. Le mental, c&#x27;est cette capacité à continuer quand le corps te demande d&#x27;arrêter. C&#x27;est souvent dans ces moments-là que tout se joue.</p>
+              <p>Cette expérience a profondément changé ma vision du sport et ma façon d&#x27;aborder le coaching. Être performant, ce n&#x27;est pas seulement construire du muscle, c&#x27;est développer un corps fort, endurant et un mental à toute épreuve.</p>
+              
+            </div>
+          </article>
+          <article class="pc__step" id="y2023" data-reveal>
+            <span class="pc__year" aria-hidden="true">2023</span>
+            <div class="pc__card">
+              <h2>Je décide de faire de ma passion mon métier.</h2>
+              <p>Je passe mon BPJEPS avec un objectif bien précis : vivre du sport et de ce qui m&#x27;anime au quotidien.</p>
+              <p>Ma passion ? Le sport, le dépassement de soi, mais surtout l&#x27;envie d&#x27;aider les autres à atteindre leurs objectifs dans les meilleures conditions possibles.</p>
+              <p>Je ne voulais pas simplement devenir coach, je voulais transmettre ce que le sport m&#x27;avait appris et accompagner chaque personne dans sa propre évolution. Parce que ma plus grande satisfaction, c&#x27;est de voir les autres progresser.</p>
+              
+            </div>
+          </article>
+          <article class="pc__step" id="y2024" data-reveal>
+            <span class="pc__year" aria-hidden="true">2024</span>
+            <div class="pc__card">
+              <h2>Je fais mes premiers pas en tant que coach sportif.</h2>
+              <p>Je commence à accompagner mes premiers clients en salle de sport et j&#x27;ai la chance de travailler avec plus d&#x27;une centaine de personnes, pour des séances ponctuelles ou des suivis à long terme.</p>
+              <p>Perte de poids, prise de masse, développement de la force et de l&#x27;endurance, préparation physique pour le MMA, la boxe ou le football, préparation aux concours de la douane, de la gendarmerie ou de l&#x27;armée… J&#x27;ai également accompagné des personnes qui souhaitaient simplement entretenir leur forme et prendre soin de leur santé.</p>
+              <p>Une expérience humaine et professionnelle incroyable, qui m&#x27;a permis de développer mes compétences, d&#x27;apprendre énormément et surtout de faire de très belles rencontres. Un immense merci à toutes les personnes qui m&#x27;ont accordé leur confiance et qui ont contribué, de près ou de loin, à mon évolution.</p>
+              
+            </div>
+          </article>
+          <article class="pc__step" id="y2026" data-reveal>
+            <span class="pc__year" aria-hidden="true">2026</span>
+            <div class="pc__card">
+              <h2>Un nouveau chapitre commence.</h2>
+              <p>Je relance mon activité avec un objectif qui me tient particulièrement à cœur : ouvrir mon propre studio de coaching.</p>
+              <p>Un rêve que je porte depuis longtemps : avoir mon propre espace, pouvoir travailler librement et proposer un accompagnement sans dépendre d&#x27;une salle de sport. Ce projet a demandé du temps, beaucoup d&#x27;investissement et de la détermination. Mais pour moi, ça n&#x27;a pas de prix.</p>
+              <p>Aujourd&#x27;hui, ce rêve est devenu réalité. Je suis fier de pouvoir vous accueillir dans mon propre studio et de vous accompagner dans les meilleures conditions. À très vite !</p>
+              
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" id="contact">
+      <div class="wrap final__in">
+        <h2 data-reveal>On commence<br>quand tu veux.</h2>
+        <p data-reveal>Premier échange gratuit, sans engagement.</p>
+        <a class="btn btn--primary btn--xl" href="tel:+33663959355" data-call data-reveal>
+          <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span data-phone-label>06 63 95 93 55</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <div>
+        <img class="footer__logo" src="assets/logo-crop.png" width="430" height="300" loading="lazy" alt="Benz Coaching">
+        <p class="footer__muted">Coaching perte de poids et musculation.</p>
+      </div>
+      <ul class="social">
+        <li><a href="mailto:benzfit.coaching@gmail.com"><svg class="ico" aria-hidden="true"><use href="index.html#i-mail"/></svg><span>benzfit.coaching@gmail.com</span></a></li>
+        <li><a href="https://www.tiktok.com/@Anthony.Coaching" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="index.html#i-tiktok"/></svg><span>TikTok @Anthony.Coaching</span></a></li>
+        <li><a href="https://www.instagram.com/Anthony.Coaching" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="index.html#i-instagram"/></svg><span>Instagram @Anthony.Coaching</span></a></li>
+      </ul>
+    </div>
+    <div class="wrap footer__legal">
+      <!-- TODO: mentions légales réelles (statut, SIRET, adresse, hébergeur) -->
+      <p>© <span id="year">2026</span> Anthony Coaching. Mentions légales : Anthony [NOM], entrepreneur individuel, SIRET [XXX XXX XXX XXXXX]. Site hébergé par [HÉBERGEUR]. Les résultats varient selon chaque personne.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton d'appel flottant (mobile) -->
+  <a class="fab" id="fab" href="tel:+33663959355" data-call aria-label="Appeler Anthony">
+    <svg class="ico" aria-hidden="true"><use href="index.html#i-phone"/></svg>
+    <span>Appeler</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
